@@ -25,9 +25,9 @@
       <h1>Invoices Management</h1>
       <p>Create, track, and manage invoices.</p>
 
-      <h2>Create Invoice</h2>
+      <form class="form-invoices">
+        <h2>Create Invoice</h2>
 
-      <form>
         <label for="client">Client</label>
         <select id="client">
           <option value="">Select Client</option>
@@ -60,45 +60,59 @@
       </form>
     </main>
 
-    <!-- Section add invoice -->
+    <!-- Section all invoice -->
     <section class="all-invoices-section">
       <h2>All Invoices</h2>
 
-      <div class="all-invoices">
-        <h3 class="invoice-name">Asma</h3>
-        <p class="invoice-service">Service: Design</p>
-        <p class="invoice-amount">Amount: 500$</p>
-        <p class="invoice-description">Description: This is an invoice</p>
-        <p class="invoice-status">Status: Unpaid</p>
-        <p class="date">Date: 2026-9-8</p>
-        <button class="invoice-edit">Edit</button>
-        <button class="invoice-delete">Delete</button>
-        <button class="invoice-mark">Mark Paid</button>
+      <div class="div-all-invoices">
+        <div class="all-invoices">
+          <h3 class="invoice-name">Asma</h3>
+          <p class="invoice-service">Service: Design</p>
+          <p class="invoice-amount">Amount: 500$</p>
+          <p class="invoice-description">Description: This is an invoice</p>
+          <p class="invoice-status">Status: Unpaid</p>
+          <p class="date">Date: 2026-9-8</p>
+          <button class="invoice-edit">Edit</button>
+          <button class="invoice-delete">Delete</button>
+          <button class="invoice-mark">Mark Paid</button>
+        </div>
+
+        <div class="all-invoices">
+          <h3 class="invoice-name">Asma</h3>
+          <p class="invoice-service">Service: Design</p>
+          <p class="invoice-amount">Amount: 500$</p>
+          <p class="invoice-description">Description: This is an invoice</p>
+          <p class="invoice-status">Status: Unpaid</p>
+          <p class="date">Date: 2026-9-8</p>
+          <button class="invoice-edit">Edit</button>
+          <button class="invoice-delete">Delete</button>
+          <button class="invoice-mark">Mark Paid</button>
+        </div>
       </div>
     </section>
 
     <!-- Section invoice summary -->
     <section class="invoices-summary">
       <h2>Invoice Summary</h2>
-      <div>
-        <div class="dashboard-invoice">
+      <div class="all-dashboard-invoices">
+        <div class="dashboard-invoices">
           <p>Invoices</p>
           <p id="total-invoices">3</p>
         </div>
 
         <div class="dashboard-invoices">
           <p>Paid Invoices</p>
-          <p id="total-paidInvoice-">3</p>
+          <p class="total-invoices id="total-paidInvoice-">3</p>
         </div>
 
         <div class="dashboard-invoices">
           <p>Unpaid Invoices</p>
-          <p id="total-unpaidInvoice">3</p>
+          <p class="total-invoices" id="total-unpaidInvoice">3</p>
         </div>
 
         <div class="dashboard-invoices">
           <p>Revenue</p>
-          <p id="total-revenueEarned">3</p>
+          <p class="total-invoices id="total-revenueEarned">3</p>
         </div>
       </div>
     </section>

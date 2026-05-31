@@ -24,17 +24,15 @@
     <main class="main-clients">
       <h1>Clients Management</h1>
       <p>Manage all your clients.</p>
-      <div>
+      <div class="add-client-form">
         <h2>Add client form</h2>
-        <div class="add-client-form">
-          <form action="">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Company" required />
-            <input type="text" placeholder="Notes" required />
-            <button class="add-clients-button">Add Clients</button>
-          </form>
-        </div>
+        <form action="">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Company" required />
+          <textarea placeholder="Notes" required></textarea>
+          <button class="add-clients-button">Add Clients</button>
+        </form>
       </div>
     </main>
 
@@ -42,12 +40,23 @@
     <section class="see-clients">
       <h2 class="see-clients-h2">See clients</h2>
       <div class="all-clients">
-        <h2 class="name-clients" id="name-clients">Asma</h2>
-        <p class="email-clients" id="email-clients">hsijaOJ</p>
-        <p class="company-clients" id="company-clients">Microsoft</p>
-        <p class="notes-clients" id="notes-clients">You are beautiful</p>
-        <button class="edit-client" id="edit-client">Edit</button>
-        <button class="delete-client" id="delete-client">Delete</button>
+        <div class="client-cards">
+          <h2 class="name-clients" id="name-clients">Asma</h2>
+          <p class="email-clients" id="email-clients">hsijaOJ</p>
+          <p class="company-clients" id="company-clients">Microsoft</p>
+          <p class="notes-clients" id="notes-clients">You are beautiful</p>
+          <button class="edit-client" id="edit-client">Edit</button>
+          <button class="delete-client" id="delete-client">Delete</button>
+        </div>
+
+        <div class="client-cards">
+          <h2 class="name-clients" id="name-clients">Asma</h2>
+          <p class="email-clients" id="email-clients">hsijaOJ</p>
+          <p class="company-clients" id="company-clients">Microsoft</p>
+          <p class="notes-clients" id="notes-clients">You are beautiful</p>
+          <button class="edit-client" id="edit-client">Edit</button>
+          <button class="delete-client" id="delete-client">Delete</button>
+        </div>
       </div>
     </section>
 

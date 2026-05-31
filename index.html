@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Invoice Flow</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -19,6 +19,61 @@
         <li><a href="invoices.html">Invoices</a></li>
       </ul>
     </nav>
+
+    <!-- Main -->
+    <main class="main-index">
+      <h1 class="h1-main-index">Welcome to Invoice Flow</h1>
+      <p class="p-main-index">Manage Clients. Create Invoices. Get Paid.</p>
+      <h2 class="h2-main-index">Quick Actions</h2>
+      <a class="a-main-index" href="clients.html"> + Add Client </a>
+      <a class="a-main-index" href="invoices.html"> + Create Invoice </a>
+    </main>
+
+    <!-- Section dashboard -->
+    <section class="section-dashboard-index">
+      <h2 class="h2-dashboard-index">Dashboard Overview</h2>
+      <div class="all-dashboard-index">
+        <div class="dashboard-index">
+          <p>Clients</p>
+          <p id="total-client-index">3</p>
+        </div>
+
+        <div class="dashboard-index">
+          <p>Invoices</p>
+          <p id="total-invoice-index">3</p>
+        </div>
+
+        <div class="dashboard-index">
+          <p>Revenue Earned</p>
+          <p id="total-revenueEarned-index">3</p>
+        </div>
+
+        <div class="dashboard-index">
+          <p>Paid Invoices</p>
+          <p id="total-paidInvoice-index">3</p>
+        </div>
+
+        <div class="dashboard-index">
+          <p>Unpaid Invoices</p>
+          <p id="total-unpaidInvoice-index">3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section motivational -->
+    <section class="motivational-index">
+      <h2 class="h2-motivational-index">Motivational Quote</h2>
+      <h3 class="h3-motivational-index" id="h3-motivational-index">
+        "You can do it"
+      </h3>
+      <p class="p-motivational-index" id="p-motivational-index">- Author</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Invoice Flow. All rights reserved.</p>
+    </footer>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

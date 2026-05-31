@@ -6,8 +6,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  background-color: #0d0d0d;
+  color: white;
 }
+
 /* Navbar style */
 .navbar {
   display: flex;
@@ -36,11 +38,11 @@ body {
 }
 
 .ul-navbar li a:hover {
-  color: #555555;
+  color: #59ff0f;
 }
 
 .invoiceLogo {
-  width: 4rem;
+  width: 6rem;
 }
 
 .menu-toggle {
@@ -111,5 +113,165 @@ body {
 @media (max-width: 768px) {
   .footer {
     margin-bottom: 0%;
+  }
+}
+
+/* Main index.html */
+.main-index {
+  display: block;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 7rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.main-index p {
+  font-style: italic;
+  color: #cccccc;
+}
+
+.main-index h2 {
+  margin-top: 5rem;
+  color: #59ff0f;
+}
+
+.main-index a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #59ff0f;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.main-index a:hover {
+  background-color: black;
+  color: #59ff0f;
+  border: 2px solid #59ff0f;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #59ff0f;
+}
+
+@media (max-width: 768px) {
+  .main-index h1 {
+    font-size: 2rem;
+  }
+
+  .main-index p {
+    font-size: 1rem;
+  }
+
+  .main-index h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-index a {
+    padding: 0.1rem 1rem;
+  }
+}
+
+/* Dashboard section index.html */
+.section-dashboard-index {
+  background-color: #0d0d0d;
+  padding: 4rem 2rem;
+}
+
+.section-dashboard-index h2 {
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.section-dashboard-index .all-dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.section-dashboard-index .dashboard {
+  text-align: center;
+  background-color: #222222;
+  margin: 3rem;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 220px;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.section-dashboard-index .dashboard-number {
+  color: #59ff0f;
+}
+
+.dashboard:hover {
+  transform: translateY(-5px);
+  border-color: #59ff0f;
+  box-shadow: 0 0 15px rgba(89, 255, 15, 0.4);
+}
+
+.dashboard p:first-child {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.dashboard p:last-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #59ff0f;
+}
+
+@media (max-width: 768px) {
+  .section-dashboard-index h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Motivational quote index.html */
+.motivational-index {
+  display: block;
+  text-align: center;
+}
+
+.motivational-index h2 {
+  font-size: 2.2rem;
+}
+
+.motivational-index div {
+  margin-top: 4rem;
+  background-color: #222222;
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 15px;
+}
+
+.motivational-index h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+.motivational-index h3:hover {
+  color: #59ff0f;
+  cursor: text;
+}
+
+@media (max-width: 768px) {
+  .motivational-index h2 {
+    font-size: 1.5rem;
+  }
+
+  .motivational-index h3 {
+    font-size: 1rem;
+    font-weight: 600;
   }
 }

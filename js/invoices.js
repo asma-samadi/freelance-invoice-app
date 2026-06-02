@@ -1,5 +1,4 @@
-import { clients } from "./data.js";
-let invoices = JSON.parse(localStorage.getItem("invoices")) || [];
+import { clients, invoices } from "./data.js";
 
 let selectInvoices = document.getElementById("client");
 let serviceTitle = document.getElementById("service-title");

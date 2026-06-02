@@ -27,11 +27,32 @@
       <div class="add-client-form">
         <h2>Add client form</h2>
         <form action="">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Company" required />
-          <textarea placeholder="Notes" required></textarea>
-          <button class="add-clients-button">Add Clients</button>
+          <input
+            id="name-input-client"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <input
+            id="email-input-client"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="company-input-client"
+            type="text"
+            placeholder="Company"
+            required
+          />
+          <textarea
+            id="textarea-input-client"
+            placeholder="Notes"
+            required
+          ></textarea>
+          <button id="button-input-client" class="add-clients-button">
+            Add Clients
+          </button>
         </form>
       </div>
     </main>
@@ -39,25 +60,7 @@
     <!-- Section see clients -->
     <section class="section-clients">
       <h2 class="see-clients-h2">See clients</h2>
-      <div class="all-clients">
-        <div class="client-cards">
-          <h2 class="name-clients" id="name-clients">Asma</h2>
-          <p class="email-clients" id="email-clients">hsijaOJ</p>
-          <p class="company-clients" id="company-clients">Microsoft</p>
-          <p class="notes-clients" id="notes-clients">You are beautiful</p>
-          <button class="edit-client" id="edit-client">Edit</button>
-          <button class="delete-client" id="delete-client">Delete</button>
-        </div>
-
-        <div class="client-cards">
-          <h2 class="name-clients" id="name-clients">Asma</h2>
-          <p class="email-clients" id="email-clients">hsijaOJ</p>
-          <p class="company-clients" id="company-clients">Microsoft</p>
-          <p class="notes-clients" id="notes-clients">You are beautiful</p>
-          <button class="edit-client" id="edit-client">Edit</button>
-          <button class="delete-client" id="delete-client">Delete</button>
-        </div>
-      </div>
+      <div class="all-clients" id="all-clients"></div>
     </section>
 
     <!-- Footer -->
@@ -66,5 +69,6 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script type="module" src="./js/clients.js"></script>
   </body>
 </html>

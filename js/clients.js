@@ -1,4 +1,5 @@
 import { clients } from "./data.js";
+import { fetchClients } from "./utils.js";
 
 let nameInputClient = document.getElementById("name-input-client");
 let emailInputClient = document.getElementById("email-input-client");
@@ -24,8 +25,7 @@ buttonInputClient.addEventListener("click", function (event) {
   if (
     sendInfo.nameClient === "" ||
     sendInfo.emailClient === "" ||
-    sendInfo.companyClient === "" ||
-    sendInfo.textareaClient === ""
+    sendInfo.companyClient === ""
   ) {
     alert("Please fill all the form");
     return;
@@ -65,7 +65,6 @@ function showClients() {
           <h2 class="name-clients">${client.nameClient}</h2>
           <p class="email-clients">${client.emailClient}</p>
           <p class="company-clients">${client.companyClient}</p>
-          <p class="notes-clients">${client.textareaClient}</p>
           <button class="edit-client" data-index= '${index}'>Edit</button>
           <button class="delete-client" data-index="${index}">Delete</button>
         </div>
@@ -109,3 +108,15 @@ allClients.addEventListener("click", function (event) {
     });
   }
 });
+
+async function loadInitialClients() {
+  if (clients.length === 0) {
+    const apiClients = await fetchClients();
+
+    clients.push(...apiClients);
+
+    localStorage.setItem("clients", JSON.stringify(clients));
+  }
+}
+
+loadInitialClients();
